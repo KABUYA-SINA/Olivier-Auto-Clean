@@ -1,0 +1,53 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.card {
+    height: 100%;
+    width: 100%;
+    &-boxe{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        & .card-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: nth($gap, 1);
+            padding: nth($padding, 4)+5;
+            & .card-link{
+                color: #000000;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                & .btn-card{
+                    cursor: pointer;
+                    height: 50px;
+                    padding: 0 nth($padding, 3);
+                    color: white;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(to right, #6699CC 100%, black 0%)
+                }
+            }
+        }
+    }
+}

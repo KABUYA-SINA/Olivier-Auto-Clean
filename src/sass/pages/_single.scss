@@ -1,0 +1,57 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.single{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .single-main{
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: nth($gap, 4)*2.5;
+        @include mobile{
+            width: 100%;
+        }
+        & .text-single{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: nth($gap, 4);
+            @include mobile{
+                width: 90%;
+            }
+            & .qualite,
+            & .satisfaction{
+                display: flex;
+                flex-direction: column;
+                gap: nth($gap, 4);
+                @include mobile {
+                    width: 100%;
+                }
+                @include tablet {
+                    width: 90%;
+                }
+                @include ordi {
+                    width: 50%;
+                }
+                @include largeOrdi {
+                    width: 30%;
+                }
+            }
+        }
+    }
+    & .footer{
+        background: transparent;
+    }
+}
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

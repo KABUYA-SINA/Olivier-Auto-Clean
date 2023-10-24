@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.container{
+    & .main-home {
+        @include all-main;
+       &>.css-1c2fuzs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+        margin-bottom: nth($margin, 4)*7.5;
+        & .heading-txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: nth($gap, 4)*2.5;
+            padding: nth($padding, 4)*2.5;
+            &>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            & .welcom, 
+            .mission, 
+            .environ,
+            .service{
+                display: flex;
+                flex-direction: column;
+                gap: nth($gap, 4);
+                @include mobile {
+                    width: 100%;
+                    align-items: flex-start;
+                }
+                @include tablet {
+                    width: 90%;
+                }
+                @include ordi {
+                    width: 50%;
+                }
+                @include largeOrdi {
+                    width: 30%;
+                }
+            }
+            & .service{
+                align-items: flex-start;
+                & .service-c{
+                    list-style-type: disc;
+                }
+            }
+        }
+        &>div>.btn-home{
+            width: 100%;
+            & .btn {
+                @include btn;
+                color: $white-color;
+                background: #6699CC;
+                padding: nth($padding, 4)*2;
+                border-radius: 5px;
+                transform: scale(1);
+                transition: transform 200ms;
+            }
+        }
+        & .btn{
+            @include btn;
+            & .head {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: nth($padding, 4);
+                color: $white-color;
+                background: $black-color;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+        & .section-home {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: nth($gap, 4)*2;
+            @include mobile{
+                width: 100%;
+                align-items: center;
+            }
+            @include tablet{
+                align-items: stretch;
+            }
+            @include ordi{
+                width: 80%;
+            }
+            @include mobile{
+                flex-direction: column;
+                padding-top: nth($padding, 4)*2.5;
+            }
+            @include tablet{
+                flex-direction: row;
+            }
+            &>div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                @include mobile {
+                    width: 90%;
+                }
+                @include tablet {
+                    width: 35%;
+                }
+                @include ordi {
+                    width: 25%;
+                }
+            }
+            article{
+                height: 100%;
+                width: 100%;
+                background: $white-color;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+        }
+    }
+}
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+

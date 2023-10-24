@@ -1,0 +1,33 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: nth($gap, 4)*2.5;
+    padding: nth($padding, 4);
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        color: $black-color;
+
+        & .btn-error {
+            cursor: pointer;
+            padding: nth($padding, 1) 10px;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid $black-color;
+            @include shadow;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.main-home>.btn>.head,
+.president>p {
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2,
+.head {
+    font-size: 30px;
+}
+
+.card-text>h2{
+    font-size: 17px;
+}
+h3 {
+    font-size: 29px;
+}
+
+h4, .president>h3 {
+    font-size: 22px;
+}
+p, span, .service-c{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+.for-form, .form-input, .btn-card{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+label, .btn-card{
+    font-weight: 400;
+    font-size: 15px;
+}

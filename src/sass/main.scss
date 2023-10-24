@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/header-typo";
+@import "./base/footer-typo";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/container";
+
+@import "./pages/error";
+@import "./pages/about";
+@import "./pages/cards";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/banner";
+@import "./pages/form";
+@import "./pages/single";
+@import "./pages/slider";

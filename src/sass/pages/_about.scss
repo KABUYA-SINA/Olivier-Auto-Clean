@@ -1,0 +1,52 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.about {
+    display: flex;
+    height: 130vh;
+    flex-direction: column;
+    justify-content: space-between;
+    & .main-about {
+        @include all-main;
+        & .about-us{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: nth($padding, 4)*2.5;
+            gap: nth($gap, 4)*2.5;
+            &>div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            & .about-me,
+            .passion,
+            .aventure,
+            .qualité,
+            .satisfaction,
+            .remerciement,
+            .president{
+                display: flex;
+                flex-direction: column;
+                gap: nth($gap, 4);
+                @include mobile{
+                    width: 100%;
+                }
+                @include tablet{
+                    width: 90%;
+                }
+                @include ordi{
+                    width: 50%;
+                }
+                @include largeOrdi{
+                    width: 30%;
+                }
+            }
+            & .president{
+                margin-bottom: nth($margin, 4)*2.5;
+                gap: nth($gap, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: nth($margin, 4) 0;
+    gap: nth($gap, 1);
+
+    & .alert {
+        font-size: 12px;
+        padding: nth($padding, 1)-2;
+        color: red;
+        display: none;
+    }
+
+    input:invalid[focused="true"]~.alert {
+        display: block;
+    }
+
+    input:invalid[focused="true"] {
+        border: 1px solid red;
+    }
+}

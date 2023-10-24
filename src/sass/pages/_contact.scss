@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.contact {
+    display: flex;
+    height: 120vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .main-contact {
+        @include all-main;
+        & .contact-menu{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            width: 100%;
+        }
+        & .map{
+           width: 100%;
+        }
+        & .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                margin-top: nth($margin, 4)*2.5;
+            }
+            .for-form {
+                padding: nth($padding, 4) 0 nth($padding, 4)*2.5 0;
+                position: relative;
+                width: 90%;
+
+                @include ordi {
+                    width: 70%;
+                }
+                @include largeOrdi {
+                    width: 30%;
+                }
+                & .form-input {
+                    @include form-control;
+                }
+                button {
+                    @include btn;
+                    background: $blue-gray;
+                    @include shadow;
+                    height: 50px;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    color: $white-color;
+                }
+            }
+            & .adress{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: nth($margin, 4)*1.75;
+                & p{
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
