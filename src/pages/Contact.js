@@ -1,18 +1,18 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import bannerImage from '../assets/contact.webp';
-import Footer from '../components/Footer';
 import FormInput from '../components/Form/FormInput';
 import TextArea from '../components/Form/TextArea';
 import '../sass/base/_base.scss';
 import '../sass/pages/_contact.scss';
 
 const Contact = () => {
-    const [ban, setBan] = useState(bannerImage)
+    const [ban, setBan] = useState([])
     const form = useRef();
     const history = useNavigate()
     const [textareaValues, setTextAreaValues] = useState('')
@@ -49,7 +49,7 @@ const Contact = () => {
             label: 'Email',
             type: 'email',
             errorMessage: "The email must be valable",
-            maxLength: '25',
+            maxLength: '15',
             required: true,
             pattern: '/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i'
         }, {
@@ -65,6 +65,10 @@ const Contact = () => {
         }
 
     ]
+
+    useEffect(() => {
+        setBan(bannerImage)
+    }, [])
 
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
@@ -134,8 +138,7 @@ const Contact = () => {
             </main>
             <Footer />
         </motion.div>
-
     )
 }
 
-export default Contact
+export default Contact;

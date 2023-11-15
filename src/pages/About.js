@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -9,7 +9,10 @@ import '../sass/base/_base.scss';
 import '../sass/pages/_about.scss';
 
 const About = () => {
-    const [ban, setBan] = useState(bannerImage)
+    const [ban, setBan] = useState([])
+    useEffect(() => {
+        setBan(bannerImage)
+    }, [])
     return (
         <motion.div
             className='about'
@@ -57,4 +60,4 @@ const About = () => {
     )
 }
 
-export default About
+export default About;

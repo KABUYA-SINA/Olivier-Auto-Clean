@@ -1,27 +1,24 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
-
-.header{
-    font-family: "Lora", serif;
+.header {
     font-weight: 700;
     text-transform: uppercase;
-
-    h1{
+    h1 {
         letter-spacing: 2px;
-        @include mobile{
+        @include mobile {
             font-size: 27px;
         }
-        @include tablet{
-            font-size: 32px;
+        @include tablet {
+            font-size: 30px;
         }
     }
-    a{
+    a {
         letter-spacing: 1px;
+        font-weight: 600;
         @include mobile {
             font-size: 13px;
         }
-
         @include tablet {
             font-size: 15px;
         }

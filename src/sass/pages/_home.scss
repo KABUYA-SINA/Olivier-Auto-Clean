@@ -2,58 +2,82 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
-.container{
+.container {
     & .main-home {
         @include all-main;
-       &>.css-1c2fuzs{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       }
         margin-bottom: nth($margin, 4)*7.5;
-        & .heading-txt{
+        gap: nth($gap, 4)*1.5;
+        &>.css-1c2fuzs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & .heading-txt {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: nth($gap, 4)*2.5;
             padding: nth($padding, 4)*2.5;
-            &>div{
+            &>div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
             }
-            & .welcom, 
-            .mission, 
+            & .welcom,
+            .mission,
             .environ,
-            .service{
+            .service {
                 display: flex;
                 flex-direction: column;
                 gap: nth($gap, 4);
+                align-items: center;
                 @include mobile {
                     width: 100%;
-                    align-items: flex-start;
                 }
                 @include tablet {
                     width: 90%;
                 }
                 @include ordi {
                     width: 50%;
+                    //50
                 }
                 @include largeOrdi {
-                    width: 30%;
+                    width: 35%;
+                    //30
                 }
             }
-            & .service{
-                align-items: flex-start;
-                & .service-c{
-                    list-style-type: disc;
+            & .service {
+                & .service-boxes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: solid red;
+                    width: 100%;
+                    gap: nth($gap, 4)*1.5;
+                    @include mobile {
+                        flex-direction: column;
+                    }
+                    @include tablet {
+                        flex-direction: row;
+                    }
+                    & .service-first,
+                    & .service-second {
+                        border: solid;
+                        height: 100%;
+                        width: 100%;
+                        & .service-c {
+                            border: solid green;
+                            text-align: center;
+                        }
+                    }
+
                 }
             }
         }
-        &>div>.btn-home{
+        &>div>.btn-home {
             width: 100%;
             & .btn {
                 @include btn;
@@ -65,7 +89,7 @@
                 transition: transform 200ms;
             }
         }
-        & .btn{
+        & .btn {
             @include btn;
             & .head {
                 height: 100%;
@@ -78,28 +102,26 @@
                 background: $black-color;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                cursor: none
             }
         }
         & .section-home {
             display: flex;
+            align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             gap: nth($gap, 4)*2;
-            @include mobile{
+            @include mobile {
                 width: 100%;
-                align-items: center;
             }
-            @include tablet{
-                align-items: stretch;
-            }
-            @include ordi{
+            @include ordi {
                 width: 80%;
             }
-            @include mobile{
+            @include mobile {
                 flex-direction: column;
                 padding-top: nth($padding, 4)*2.5;
             }
-            @include tablet{
+            @include tablet {
                 flex-direction: row;
             }
             &>div {
@@ -117,7 +139,7 @@
                     width: 25%;
                 }
             }
-            article{
+            article {
                 height: 100%;
                 width: 100%;
                 background: $white-color;

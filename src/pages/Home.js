@@ -59,21 +59,27 @@ const Home = () => {
                                 </p>
                             </div>
                             <div className="service">
-                                <h3>Nos Services</h3>
-                                <h4>Lavage de Voiture</h4>
-                                <ul className='service-c'>
-                                    <li>Lavage extérieur</li>
-                                    <li>Lavage extérieur et intérieur</li>
-                                    <li>Lavage à la main</li>
-                                    <li>Rénovation phare</li>
-                                </ul>
-                                <h4>Services Additionnels</h4>
-                                <ul className='service-c'>
-                                    <li>Lustrage et cirage</li>
-                                    <li>Shampooing de tapis et sièges</li>
-                                    <li>Traitement de la carrosserie</li>
-                                    <li>Désodorisation</li>
-                                </ul>
+                                <h2>Nos Services</h2>
+                                <div className="service-boxes">
+                                    <div className="service-first">
+                                        <h3>Nettoyage de Voiture</h3>
+                                        <ul className='service-c'>
+                                            <li>Lavage extérieur</li>
+                                            <li>Lavage extérieur et intérieur</li>
+                                            <li>Lavage à la main</li>
+                                            <li>Rénovation phare</li>
+                                        </ul>
+                                    </div>
+                                    <div className="service-second">
+                                        <h3>Services Additionnels</h3>
+                                        <ul className='service-c'>
+                                            <li>Lustrage et cirage</li>
+                                            <li>Shampooing de tapis et sièges</li>
+                                            <li>Traitement de la carrosserie</li>
+                                            <li>Désodorisation</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </Fade>
                     </div>

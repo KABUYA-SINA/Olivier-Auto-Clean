@@ -3,12 +3,12 @@
 
 .about {
     display: flex;
-    height: 130vh;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     & .main-about {
         @include all-main;
-        & .about-us{
+        & .about-us {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -26,24 +26,25 @@
             .qualité,
             .satisfaction,
             .remerciement,
-            .president{
+            .president {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: nth($gap, 4);
-                @include mobile{
+                @include mobile {
                     width: 100%;
                 }
-                @include tablet{
+                @include tablet {
                     width: 90%;
                 }
-                @include ordi{
+                @include ordi {
                     width: 50%;
                 }
-                @include largeOrdi{
-                    width: 30%;
+                @include largeOrdi {
+                    width: 35%;
                 }
             }
-            & .president{
+            & .president {
                 margin-bottom: nth($margin, 4)*2.5;
                 gap: nth($gap, 1);
             }
