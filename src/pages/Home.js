@@ -94,7 +94,7 @@ const Home = () => {
                                                                 firstIconsArray.map(({ cover, alt, _id, title }) => (
                                                                     <div key={_id} className='serv-m--mo'>
                                                                         <li className='ul-li'>
-                                                                            <img src={cover} alt={alt} title={alt} className='ul-li-img' />
+                                                                            <img src={cover} alt={alt} className='ul-li-img' />
                                                                         </li>
                                                                         <p>{title}</p>
                                                                     </div>
@@ -107,7 +107,7 @@ const Home = () => {
                                                                 secondIconsArray.map(({ cover, alt, _id, title }) => (
                                                                     <div key={_id} className='serv-m--mo'>
                                                                         <li className='ul-li'>
-                                                                            <img src={cover} alt={alt} title={alt} className='ul-li-img' />
+                                                                            <img src={cover} alt={alt} className='ul-li-img' />
                                                                         </li>
                                                                         <p>{title}</p>
                                                                     </div>
@@ -125,7 +125,7 @@ const Home = () => {
                                                                 thirdIconsArray.map(({ cover, alt, _id, title }) => (
                                                                     <div key={_id} className='serv-m--mo'>
                                                                         <li className='ul-li'>
-                                                                            <img src={cover} alt={alt} title={alt} className='ul-li-img' />
+                                                                            <img src={cover} alt={alt} className='ul-li-img' />
                                                                         </li>
                                                                         <p>{title}</p>
                                                                     </div>
@@ -138,7 +138,7 @@ const Home = () => {
                                                                 fourthIconsArray.map(({ cover, alt, _id, title, }) => (
                                                                     <div key={_id} className='serv-m--mo'>
                                                                         <li className='ul-li'>
-                                                                            <img src={cover} alt={alt} title={alt} className='ul-li-img' />
+                                                                            <img src={cover} alt={alt} className='ul-li-img' />
                                                                         </li>
                                                                         <p>{title}</p>
                                                                     </div>
