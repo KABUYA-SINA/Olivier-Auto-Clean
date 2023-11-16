@@ -12,7 +12,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            padding: nth($padding, 4)*2.5;
+            padding: nth($padding, 4)*2.5 nth($padding, 3);
             gap: nth($gap, 4)*2.5;
             &>div {
                 display: flex;
