@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Olivier-Auto-Clean/static/css/main.5c635929.css",
-    "main.js": "/Olivier-Auto-Clean/static/js/main.eddbf57b.js",
+    "main.css": "/Olivier-Auto-Clean/static/css/main.072ef070.css",
+    "main.js": "/Olivier-Auto-Clean/static/js/main.0f6ea373.js",
     "static/media/merco-two.webp": "/Olivier-Auto-Clean/static/media/merco-two.aef947e7325230e92479.webp",
     "static/media/a4-four.webp": "/Olivier-Auto-Clean/static/media/a4-four.f48eee8a610e49541241.webp",
     "static/media/a4-one.webp": "/Olivier-Auto-Clean/static/media/a4-one.d6411cf6c1ac02e92104.webp",
@@ -14,6 +14,7 @@
     "static/media/porshe-four.webp": "/Olivier-Auto-Clean/static/media/porshe-four.0dc8e87f3b608234d466.webp",
     "static/media/bm-two.webp": "/Olivier-Auto-Clean/static/media/bm-two.5419047b71aba18f68aa.webp",
     "static/media/bm-one.webp": "/Olivier-Auto-Clean/static/media/bm-one.3a5b67f4639fb46bfb61.webp",
+    "static/media/about.webp": "/Olivier-Auto-Clean/static/media/about.fe1e86103056af9dd02b.webp",
     "static/media/merco-four.webp": "/Olivier-Auto-Clean/static/media/merco-four.aee6e39a53a0ac4d9664.webp",
     "static/media/hundai-suv-one.webp": "/Olivier-Auto-Clean/static/media/hundai-suv-one.678eceb9de45fb2f7c8b.webp",
     "static/media/tiguan-one.webp": "/Olivier-Auto-Clean/static/media/tiguan-one.c00cd33445d3200ad7c1.webp",
@@ -25,14 +26,12 @@
     "static/media/porshe-one.webp": "/Olivier-Auto-Clean/static/media/porshe-one.c6001931c09eb457671b.webp",
     "static/media/tiguan-two.webp": "/Olivier-Auto-Clean/static/media/tiguan-two.522712fa96f5dc0f772d.webp",
     "static/media/audi-4x4-one.webp": "/Olivier-Auto-Clean/static/media/audi-4x4-one.e06f442293b12768ef28.webp",
-    "static/media/about.webp": "/Olivier-Auto-Clean/static/media/about.a233572bda85077f6744.webp",
     "static/media/hundai-suv-two.webp": "/Olivier-Auto-Clean/static/media/hundai-suv-two.043592e60ae2ce070066.webp",
-    "static/media/home.webp": "/Olivier-Auto-Clean/static/media/home.460d6b76ae42b0c61993.webp",
     "static/media/a4-three.webp": "/Olivier-Auto-Clean/static/media/a4-three.5d76f544904daea36603.webp",
     "static/media/audi-4x4-two.webp": "/Olivier-Auto-Clean/static/media/audi-4x4-two.0bb8f47c75ca1ac3cf69.webp",
     "static/media/bm-four.webp": "/Olivier-Auto-Clean/static/media/bm-four.57322b821bae3a195d94.webp",
-    "static/media/contact.webp": "/Olivier-Auto-Clean/static/media/contact.4bca5488a1c89e283999.webp",
     "static/media/tt-three.webp": "/Olivier-Auto-Clean/static/media/tt-three.6940e411caaceb2015b8.webp",
+    "static/media/home.webp": "/Olivier-Auto-Clean/static/media/home.c26563b925221983cc21.webp",
     "static/media/audi-4x4-three.webp": "/Olivier-Auto-Clean/static/media/audi-4x4-three.788af22b8427bd9345a9.webp",
     "static/media/hundai-suv-three.webp": "/Olivier-Auto-Clean/static/media/hundai-suv-three.13098a1b0ad23800053d.webp",
     "static/media/tiguan-four.webp": "/Olivier-Auto-Clean/static/media/tiguan-four.d4d4f436ac639f9847d3.webp",
@@ -41,12 +40,13 @@
     "static/media/porshe-three.webp": "/Olivier-Auto-Clean/static/media/porshe-three.3f00aa81f8694f08b767.webp",
     "static/media/bm-three.webp": "/Olivier-Auto-Clean/static/media/bm-three.372b720fdc8c993bd8ea.webp",
     "static/media/bmw-four.webp": "/Olivier-Auto-Clean/static/media/bmw-four.26f5b36eb3934b73849d.webp",
+    "static/media/contact.webp": "/Olivier-Auto-Clean/static/media/contact.32c14c8f14a358d4050f.webp",
     "index.html": "/Olivier-Auto-Clean/index.html",
-    "main.5c635929.css.map": "/Olivier-Auto-Clean/static/css/main.5c635929.css.map",
-    "main.eddbf57b.js.map": "/Olivier-Auto-Clean/static/js/main.eddbf57b.js.map"
+    "main.072ef070.css.map": "/Olivier-Auto-Clean/static/css/main.072ef070.css.map",
+    "main.0f6ea373.js.map": "/Olivier-Auto-Clean/static/js/main.0f6ea373.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c635929.css",
-    "static/js/main.eddbf57b.js"
+    "static/css/main.072ef070.css",
+    "static/js/main.0f6ea373.js"
   ]
 }
