@@ -45,12 +45,12 @@ h4 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h2,
 .head {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .card-text>h2 {
@@ -58,7 +58,7 @@ h2,
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 h4,
@@ -69,22 +69,19 @@ h4,
 p,
 span,
 .service-c {
-    font-size: 17px; //16
+    font-size: 17px;
     letter-spacing: .5px;
-
-    @include tablet {
-        text-align: center;
-    }
-}
-
-.for-form,
-.form-input,
-.btn-card {
-    //font-family: 'Lora', serif;
-    ///font-weight: 400;
+    text-align: center;
 }
 
 label,
 .btn-card {
-    font-size: 15px;
+    font-size: 12px;
+}
+.serv-c--m{
+    p{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+    }
 }

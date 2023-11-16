@@ -17,7 +17,6 @@
     @include ordi{
         width: 55%;
     }
-
     & .slider--wrapper {
         position: relative;
         height: 100%;
@@ -26,7 +25,6 @@
         @include mobile{
             width: 100%;
         }
-
         & .slider {
             display: flex;
             flex: 1;
@@ -39,13 +37,11 @@
             pointer-events: none;
             transform: scale(.7);
             transition: .6s ease-in-out;
-
             img {
                 min-width: 100%;
                 height: auto;
                 object-fit: contain;
             }
-
             & .slider_overlay {
                 position: absolute;
                 width: 100%;

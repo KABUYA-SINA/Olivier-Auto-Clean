@@ -16,8 +16,20 @@
     @include tablet {
         flex-direction: row;
     }
-    a {
-        color: $white-color;
-        cursor: pointer;
+    & .res-element{
+        display: flex;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+        }
+        @include tablet{
+            flex-direction: row;
+            gap: nth($gap, 2);
+        }
+
+        a {
+            color: $white-color;
+            cursor: pointer;
+        }
     }
 }

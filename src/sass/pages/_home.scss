@@ -32,7 +32,7 @@
             .service {
                 display: flex;
                 flex-direction: column;
-                gap: nth($gap, 4);
+                gap: nth($gap, 4)*2.5;
                 align-items: center;
                 @include mobile {
                     width: 100%;
@@ -42,35 +42,76 @@
                 }
                 @include ordi {
                     width: 50%;
-                    //50
                 }
                 @include largeOrdi {
-                    width: 35%;
-                    //30
+                    width: 40%;
                 }
             }
             & .service {
+                @include ordi {
+                    width: 70%;
+                }
+                @include largeOrdi {
+                    width: 50%;
+                }
                 & .service-boxes {
                     display: flex;
-                    align-items: center;
                     justify-content: center;
-                    border: solid red;
                     width: 100%;
                     gap: nth($gap, 4)*1.5;
                     @include mobile {
                         flex-direction: column;
+                        align-items: center;
                     }
                     @include tablet {
                         flex-direction: row;
+                        align-items: stretch;
                     }
                     & .service-first,
                     & .service-second {
-                        border: solid;
                         height: 100%;
-                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: stretch;
+                        gap: 50px;
+                        @include mobile{
+                            width: 100%;
+                        }
+                        @include tablet{
+                            width: 50%;
+                        }
                         & .service-c {
-                            border: solid green;
-                            text-align: center;
+                            display: flex;
+                            align-items: stretch;
+                            justify-content: space-around;
+                           & .serv-c--m{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50%;
+                                gap: nth($gap, 3);
+                                & .serv-m--mo{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    gap: nth($gap, 3);
+                                }
+                           }
+                           & .ul-li{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                & .ul-li-img{
+                                     object-fit: cover;
+                                     height: 100%;
+                                     width: 100%;
+                                     cursor: pointer;
+                                }
+                           }
                         }
                     }
 
@@ -91,6 +132,9 @@
         }
         & .btn {
             @include btn;
+            @include tablet{
+                margin-top: nth($margin, 4);
+            }
             & .head {
                 height: 100%;
                 width: 100%;
@@ -100,7 +144,6 @@
                 padding: nth($padding, 4);
                 color: $white-color;
                 background: $black-color;
-                text-transform: uppercase;
                 letter-spacing: 1px;
                 cursor: none
             }
