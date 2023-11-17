@@ -126,7 +126,7 @@ const Contact = () => {
                             <button type="submit" >Envoyer</button>
                         </form>
                         <div className="adress">
-                            <p>olvautoclean@gmail.com</p>
+                            <p>olivautoclean@gmail.com</p>
                             <p>212 Chémin du Guéret, 69210 Bully</p>
                             <p>Ouvert de 13h à 21h, du lundi
                                 au vendredi
