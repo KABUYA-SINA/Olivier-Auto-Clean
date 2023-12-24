@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Olivier-Auto-Clean/static/css/main.072ef070.css",
-    "main.js": "/Olivier-Auto-Clean/static/js/main.0f6ea373.js",
+    "main.css": "/Olivier-Auto-Clean/static/css/main.66b6f320.css",
+    "main.js": "/Olivier-Auto-Clean/static/js/main.af8de9a3.js",
     "static/media/merco-two.webp": "/Olivier-Auto-Clean/static/media/merco-two.aef947e7325230e92479.webp",
     "static/media/a4-four.webp": "/Olivier-Auto-Clean/static/media/a4-four.f48eee8a610e49541241.webp",
     "static/media/a4-one.webp": "/Olivier-Auto-Clean/static/media/a4-one.d6411cf6c1ac02e92104.webp",
@@ -42,11 +42,11 @@
     "static/media/bmw-four.webp": "/Olivier-Auto-Clean/static/media/bmw-four.26f5b36eb3934b73849d.webp",
     "static/media/contact.webp": "/Olivier-Auto-Clean/static/media/contact.32c14c8f14a358d4050f.webp",
     "index.html": "/Olivier-Auto-Clean/index.html",
-    "main.072ef070.css.map": "/Olivier-Auto-Clean/static/css/main.072ef070.css.map",
-    "main.0f6ea373.js.map": "/Olivier-Auto-Clean/static/js/main.0f6ea373.js.map"
+    "main.66b6f320.css.map": "/Olivier-Auto-Clean/static/css/main.66b6f320.css.map",
+    "main.af8de9a3.js.map": "/Olivier-Auto-Clean/static/js/main.af8de9a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.072ef070.css",
-    "static/js/main.0f6ea373.js"
+    "static/css/main.66b6f320.css",
+    "static/js/main.af8de9a3.js"
   ]
 }
