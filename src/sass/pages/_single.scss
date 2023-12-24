@@ -13,26 +13,20 @@
         align-items: center;
         flex-direction: column;
         gap: nth($gap, 4)*2.5;
-        @include mobile{
-            width: 100%;
-        }
+        width: 100%;
         & .text-single{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             gap: nth($gap, 4);
-            @include mobile{
-                width: 90%;
-            }
+            width: 90%;
             & .qualite,
             & .satisfaction{
                 display: flex;
                 flex-direction: column;
                 gap: nth($gap, 4);
-                @include mobile {
-                    width: 100%;
-                }
+                width: 100%;
                 @include tablet {
                     width: 90%;
                 }

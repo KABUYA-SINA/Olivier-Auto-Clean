@@ -47,7 +47,7 @@ const Home = () => {
                 <Banner image={ban} />
                 <Fade cascade damping={0.3}>
                     <div className="heading-txt">
-                        <Fade direction='up' damping={.2}>
+                        <Fade direction='up' damping={.09} >
                             <div className="welcom">
                                 <h1>Welcome to our website</h1>
                                 <p>Bienvenue chez Oliv' Auto Clean - Votre destination de confiance pour un lavage de voiture exceptionnel. Depuis Août 2020, nous nous sommes engagés à fournir à nos clients des services de lavage de voitures de qualité supérieure avec un service exceptionnel.

@@ -13,24 +13,16 @@
     top: 0;
     left: 0;
     transition: .6s;
-
-    @include mobile{
-        padding: nth($padding, 2) 25px;
-    }
+    padding: nth($padding, 2) 25px;
     @include tablet{
         padding: nth($padding, 4)*2 70px;
     }
-
     &.sticky {
-
         background: $white-color;
-        @include mobile{
-            padding: 0 nth($padding, 4);
-        }
+        padding: 0 nth($padding, 4);
         @include tablet{
             padding: 0 nth($padding, 4)+5;
         }
-
         &.sticky nav ul li a,
         .logo h1 {
             color: $black-color;
@@ -39,7 +31,6 @@
     & .logo{
         position: relative;
         cursor: pointer;
-
         h1{
             color: $white-color;
             transition: .6s;
@@ -56,9 +47,7 @@
                     padding: nth($padding, 3) 0;
                     color: $white-color;
                     transition: .6s;
-                    @include mobile{
-                        margin: 0 nth($margin, 1);
-                    }
+                    margin: 0 nth($margin, 1);
                     @include tablet{
                         margin: 0 nth($margin, 3);
                     }
